@@ -15,10 +15,6 @@
 A modern, secure file sharing platform with end-to-end encryption, user authentication, QR code sharing, and self-destructing files.
 </p>
 
-<p align="center">
-<img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
-</p>
-
 ## ✨ Features
 
 <div align="center">
@@ -56,10 +52,6 @@ A modern, secure file sharing platform with end-to-end encryption, user authenti
 </table>
 </div>
 
-<p align="center">
-<img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
-</p>
-
 ## 🛠️ Tech Stack
 
 <div align="center">
@@ -96,10 +88,6 @@ A modern, secure file sharing platform with end-to-end encryption, user authenti
   </tr>
 </table>
 </div>
-
-<p align="center">
-<img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
-</p>
 
 ## 🏗️ Architecture
 
@@ -140,10 +128,6 @@ A modern, secure file sharing platform with end-to-end encryption, user authenti
 1. User receives link and decryption key
 2. Encrypted file downloaded
 3. File decrypted locally using the key
-
-<p align="center">
-<img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
-</p>
 
 ## 🚀 Setup and Installation
 
@@ -209,10 +193,6 @@ A modern, secure file sharing platform with end-to-end encryption, user authenti
    ```bash
    npm run build
    ```
-
-<p align="center">
-<img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
-</p>
 
 ## 🌐 Deployment
 
@@ -334,10 +314,6 @@ A modern, secure file sharing platform with end-to-end encryption, user authenti
 - [ ] Monitor application logs for any errors
 </details>
 
-<p align="center">
-<img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
-</p>
-
 ## 📖 Usage Guide
 
 <div align="center">
@@ -380,10 +356,6 @@ A modern, secure file sharing platform with end-to-end encryption, user authenti
 2. Recipients can scan the QR code to access the file
 3. They'll need to enter the decryption key to download
 
-<p align="center">
-<img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
-</p>
-
 ## 📸 Screenshots
 
 <div align="center">
@@ -410,10 +382,6 @@ A modern, secure file sharing platform with end-to-end encryption, user authenti
   </tr>
 </table>
 </div>
-
-<p align="center">
-<img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
-</p>
 
 ## 📜 License
 
