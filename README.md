@@ -350,43 +350,6 @@ A modern, secure file sharing platform with end-to-end encryption, user authenti
 </table>
 </div>
 
-### 📱 Using QR Codes
-
-1. Generate a QR code for any shared file
-2. Recipients can scan the QR code to access the file
-3. They'll need to enter the decryption key to download
-
-## 📸 Screenshots
-
-<div align="center">
-<table>
-  <tr>
-    <td width="33%"><img src="https://via.placeholder.com/400x225.png?text=Login+Screen" alt="Login Screen" width="100%"/></td>
-    <td width="33%"><img src="https://via.placeholder.com/400x225.png?text=Dashboard" alt="Dashboard" width="100%"/></td>
-    <td width="33%"><img src="https://via.placeholder.com/400x225.png?text=File+Sharing" alt="File Sharing" width="100%"/></td>
-  </tr>
-  <tr>
-    <td><p align="center"><b>Login Screen</b></p></td>
-    <td><p align="center"><b>Dashboard</b></p></td>
-    <td><p align="center"><b>File Sharing</b></p></td>
-  </tr>
-  <tr>
-    <td width="33%"><img src="https://via.placeholder.com/400x225.png?text=QR+Code+Modal" alt="QR Code Modal" width="100%"/></td>
-    <td width="33%"><img src="https://via.placeholder.com/400x225.png?text=File+Download" alt="File Download" width="100%"/></td>
-    <td width="33%"><img src="https://via.placeholder.com/400x225.png?text=Mobile+View" alt="Mobile View" width="100%"/></td>
-  </tr>
-  <tr>
-    <td><p align="center"><b>QR Code Modal</b></p></td>
-    <td><p align="center"><b>File Download</b></p></td>
-    <td><p align="center"><b>Mobile View</b></p></td>
-  </tr>
-</table>
-</div>
-
-## 📜 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
 <p align="center">
 <a href="https://github.com/srivathsavsree/Secure_File_Share">
 <img src="https://img.shields.io/badge/GitHub-View%20Repository-blue?style=for-the-badge&logo=github" alt="GitHub Repository">
@@ -396,6 +359,3 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 <p align="center">
 <b>Made with ❤️ by srivathsavsree</b>
 </p>
-#   S e c u r e _ F i l e _ S h a r e 
- 
- 
