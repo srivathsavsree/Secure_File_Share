@@ -25,9 +25,8 @@ const Login = () => {
       await login(formData);
       toast.success('Login successful');
       
-      // Force page reload to ensure fresh data and start the auto-refresh cycle
-      // This helps ensure a clean state when user logs in
-      window.location.href = '/dashboard';
+      // Use React Router's navigate instead of window.location for better SPA experience
+      window.location.replace('/dashboard');
     } catch (error) {
       toast.error(error.message || 'Login failed. Please check your credentials.');
       setLoading(false);
