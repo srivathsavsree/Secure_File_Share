@@ -29,7 +29,7 @@ services:
       - key: RATE_LIMIT_MAX
         value: 100
       - key: FRONTEND_URL
-        value: https://secure-file-share.onrender.com
+        value: https://secure-file-share-9kcs.onrender.com
 
   # Frontend web service
   - type: web
