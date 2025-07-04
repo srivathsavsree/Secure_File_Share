@@ -1,0 +1,80 @@
+# Dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
+# Keep example files
+!.env.example
+
+# Builds and coverage
+/build/
+/dist/
+/coverage/
+/.nyc_output/
+/.next/
+/out/
+
+# Uploads - keep directory structure but ignore files
+/uploads/*
+/backend/uploads/*
+# Keep .gitkeep files to preserve empty directories
+!.gitkeep
+!uploads/.gitkeep
+!backend/uploads/.gitkeep
+
+# MongoDB
+/data/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# IDE and editors
+/.idea/
+/.vscode/
+*.sublime-project
+*.sublime-workspace
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.project
+.classpath
+.settings/
+*.launch
+.history/
+
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+Icon?
+
+# Package files
+package-lock.json
+yarn.lock
+# Keep package.json
+!package.json
+
+# Misc
+.cache/
+.temp/
+.tmp/
+temp/
+tmp/

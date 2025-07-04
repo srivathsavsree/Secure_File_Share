@@ -1,0 +1,48 @@
+# Render deployment configuration
+services:
+  # Backend API service
+  - type: web
+    name: secure-file-share-api
+    env: node
+    plan: free
+    region: singapore # Choose the region closest to your users
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGO_URI
+        sync: false # This should be set in the Render dashboard
+      - key: JWT_SECRET
+        sync: false # This should be set in the Render dashboard
+      - key: JWT_EXPIRE
+        value: 24h
+      - key: FILE_UPLOAD_PATH
+        value: ./uploads
+      - key: MAX_FILE_SIZE
+        value: 50000000
+      - key: ALLOWED_FILE_TYPES
+        value: jpg,jpeg,png,gif,pdf,doc,docx,txt,zip,rar,xlsx,pptx
+      - key: RATE_LIMIT_WINDOW_MS
+        value: 900000
+      - key: RATE_LIMIT_MAX
+        value: 100
+      - key: FRONTEND_URL
+        value: https://secure-file-share.onrender.com
+
+  # Frontend web service
+  - type: web
+    name: secure-file-share
+    env: static
+    region: singapore # Choose the region closest to your users
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./build
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    envVars:
+      - key: REACT_APP_API_URL
+        value: https://secure-file-share-api.onrender.com/api

@@ -1,0 +1,24 @@
+{
+  "name": "secure-file-share",
+  "version": "1.0.0",
+  "description": "Secure File Share Application",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm start",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "test-rate-limiting": "test-rate-limiting.bat"
+  },
+  "keywords": [
+    "secure",
+    "file",
+    "sharing",
+    "encryption"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.0.1"
+  }
+}
