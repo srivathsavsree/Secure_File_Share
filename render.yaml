@@ -35,7 +35,6 @@ services:
   - type: web
     name: secure-file-share
     env: static
-    region: singapore # Choose the region closest to your users
     rootDir: frontend
     buildCommand: npm install && npm run build
     staticPublishPath: ./build
