@@ -1,82 +1,167 @@
-# Secure File Share
+# 🔐 Secure File Share
 
-A modern, secure file sharing platform built with Node.js, Express, MongoDB, and React. Features end-to-end encryption, user authentication, file sharing with QR codes, and self-destructing files.
+<div align="center">
 
-## Features
+[![Node.js](https://img.shields.io/badge/Node.js-16.x-green.svg)](https://nodejs.org/)
+[![Express](https://img.shields.io/badge/Express-4.x-blue.svg)](https://expressjs.com/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-5.x-green.svg)](https://www.mongodb.com/)
+[![React](https://img.shields.io/badge/React-18.x-blue.svg)](https://reactjs.org/)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Render](https://img.shields.io/badge/Render-Deploy-violet.svg)](https://render.com)
 
-- **End-to-end encryption** using AES-256
-- **User authentication** with JWT tokens
-- **Secure file sharing** between users
-- **QR code generation** for quick file access
-- **Self-destructing files** (24-hour auto-expiration)
-- **Responsive UI** for all devices
-- **Rate limiting** to prevent abuse
-- **Manual and auto-refresh** for file lists
-- **Delete option** for shared files
-- **Secure decryption key** entry via modal
+</div>
 
-## Tech Stack
+<p align="center">
+A modern, secure file sharing platform with end-to-end encryption, user authentication, QR code sharing, and self-destructing files.
+</p>
 
-### Backend
-- **Node.js** with Express.js
-- **MongoDB** with Mongoose ODM
-- **JWT** for authentication
-- **Bcrypt** for password hashing
-- **Multer** for file uploads
-- **Crypto-JS** for file encryption
-- **QRCode** for generating QR codes
-- **Express-Rate-Limit** for API rate limiting
+<p align="center">
+<img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
+</p>
 
-### Frontend
-- **React 18** with functional components and hooks
-- **React Context API** for state management
-- **React Router** for navigation
-- **Axios** for API communication
-- **React Dropzone** for file uploads
-- **React-Toastify** for notifications
-- **React-Icons** for UI icons
-- **CSS3** with custom styling
+## ✨ Features
 
-## Architecture
+<div align="center">
+<table>
+  <tr>
+    <td align="center"><b>🔒</b></td>
+    <td><b>End-to-end encryption</b> using AES-256</td>
+    <td align="center"><b>🔑</b></td>
+    <td><b>User authentication</b> with JWT tokens</td>
+  </tr>
+  <tr>
+    <td align="center"><b>🔄</b></td>
+    <td><b>Secure file sharing</b> between users</td>
+    <td align="center"><b>📱</b></td>
+    <td><b>QR code generation</b> for quick file access</td>
+  </tr>
+  <tr>
+    <td align="center"><b>⏱️</b></td>
+    <td><b>Self-destructing files</b> (24-hour auto-expiration)</td>
+    <td align="center"><b>📱</b></td>
+    <td><b>Responsive UI</b> for all devices</td>
+  </tr>
+  <tr>
+    <td align="center"><b>🛡️</b></td>
+    <td><b>Rate limiting</b> to prevent abuse</td>
+    <td align="center"><b>🔄</b></td>
+    <td><b>Manual and auto-refresh</b> for file lists</td>
+  </tr>
+  <tr>
+    <td align="center"><b>🗑️</b></td>
+    <td><b>Delete option</b> for shared files</td>
+    <td align="center"><b>🔐</b></td>
+    <td><b>Secure decryption key</b> entry via modal</td>
+  </tr>
+</table>
+</div>
 
-### Security Features
+<p align="center">
+<img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
+</p>
 
-1. **End-to-End Encryption**: Files are encrypted using AES-256 before being stored on the server
-2. **Secure Key Management**: Encryption keys are never stored in plaintext
-3. **JWT Authentication**: Secure token-based authentication for API access
-4. **Rate Limiting**: Prevents brute force and DoS attacks
-5. **Secure File Transmission**: Files are decrypted client-side, never transmitted in plaintext
+## 🛠️ Tech Stack
 
-### Data Flow
+<div align="center">
+<table>
+  <tr>
+    <th>Backend</th>
+    <th>Frontend</th>
+  </tr>
+  <tr>
+    <td>
+      <ul>
+        <li>Node.js with Express.js</li>
+        <li>MongoDB with Mongoose ODM</li>
+        <li>JWT for authentication</li>
+        <li>Bcrypt for password hashing</li>
+        <li>Multer for file uploads</li>
+        <li>Crypto-JS for file encryption</li>
+        <li>QRCode for generating QR codes</li>
+        <li>Express-Rate-Limit for API rate limiting</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>React 18 with functional components and hooks</li>
+        <li>React Context API for state management</li>
+        <li>React Router for navigation</li>
+        <li>Axios for API communication</li>
+        <li>React Dropzone for file uploads</li>
+        <li>React-Toastify for notifications</li>
+        <li>React-Icons for UI icons</li>
+        <li>CSS3 with custom styling</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+</div>
 
-1. **Upload Process**:
-   - File selected by user
-   - Encrypted client-side before upload
-   - Stored encrypted on server
-   - Share link and decryption key generated
+<p align="center">
+<img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
+</p>
 
-2. **Download Process**:
-   - User receives link and decryption key
-   - Encrypted file downloaded
-   - File decrypted locally using the key
+## 🏗️ Architecture
 
-## Setup and Installation
+### 🔒 Security Features
 
-### Prerequisites
+<table>
+  <tr>
+    <td><b>1. End-to-End Encryption</b></td>
+    <td>Files are encrypted using AES-256 before being stored on the server</td>
+  </tr>
+  <tr>
+    <td><b>2. Secure Key Management</b></td>
+    <td>Encryption keys are never stored in plaintext</td>
+  </tr>
+  <tr>
+    <td><b>3. JWT Authentication</b></td>
+    <td>Secure token-based authentication for API access</td>
+  </tr>
+  <tr>
+    <td><b>4. Rate Limiting</b></td>
+    <td>Prevents brute force and DoS attacks</td>
+  </tr>
+  <tr>
+    <td><b>5. Secure File Transmission</b></td>
+    <td>Files are decrypted client-side, never transmitted in plaintext</td>
+  </tr>
+</table>
+
+### 🔄 Data Flow
+
+#### 📤 Upload Process:
+1. File selected by user
+2. Encrypted client-side before upload
+3. Stored encrypted on server
+4. Share link and decryption key generated
+
+#### 📥 Download Process:
+1. User receives link and decryption key
+2. Encrypted file downloaded
+3. File decrypted locally using the key
+
+<p align="center">
+<img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
+</p>
+
+## 🚀 Setup and Installation
+
+### 📋 Prerequisites
 
 - Node.js (v14+)
 - MongoDB
 - npm or yarn
 
-### Backend Setup
+### ⚙️ Backend Setup
 
 1. Navigate to the backend directory:
-   ```
+   ```bash
    cd backend
    ```
 
 2. Install dependencies:
-   ```
+   ```bash
    npm install
    ```
 
@@ -87,24 +172,24 @@ A modern, secure file sharing platform built with Node.js, Express, MongoDB, and
    - Configure other settings as needed
 
 4. Start the server:
-   ```
+   ```bash
    npm start
    ```
    
    For development with nodemon:
-   ```
+   ```bash
    npm run dev
    ```
 
-### Frontend Setup
+### 🖥️ Frontend Setup
 
 1. Navigate to the frontend directory:
-   ```
+   ```bash
    cd frontend
    ```
 
 2. Install dependencies:
-   ```
+   ```bash
    npm install
    ```
 
@@ -116,81 +201,31 @@ A modern, secure file sharing platform built with Node.js, Express, MongoDB, and
    - Adjust the URL if your backend is hosted elsewhere
 
 4. Start the development server:
-   ```
+   ```bash
    npm start
    ```
 
 5. Build for production:
-   ```
+   ```bash
    npm run build
    ```
 
-## Deployment
+<p align="center">
+<img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
+</p>
 
-### Backend Deployment
+## 🌐 Deployment
 
-1. **Heroku**:
-   - Create a Procfile with: `web: node server.js`
-   - Set environment variables in Heroku dashboard
-   - Connect to MongoDB Atlas or other cloud MongoDB provider
+<div align="center">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/render/render-original.svg" height="80" />
+</div>
 
-2. **AWS/DigitalOcean**:
-   - Set up a Node.js environment
-   - Use PM2 for process management: `pm2 start server.js`
-   - Configure Nginx as reverse proxy
-   - Set up SSL with Let's Encrypt
+### 🌟 Render Deployment Guide (Recommended)
 
-### Frontend Deployment
-
-1. **Netlify/Vercel**:
-   - Connect your GitHub repository
-   - Set build command: `npm run build`
-   - Set publish directory: `build`
-   - Configure environment variables
-
-2. **Traditional Hosting**:
-   - Run `npm run build`
-   - Upload the build folder to your hosting provider
-   - Configure redirects for SPA routing
-
-## Deployment Recommendations
-
-### Option 1: Render (Recommended for Full-Stack Apps)
-
-Render is an excellent choice for deploying this full-stack application because:
-
-1. **Unified Platform**: Deploy both backend and frontend on the same platform
-2. **Free Tier**: Offers a generous free tier for static sites and web services
-3. **Database Integration**: Easy MongoDB integration through environment variables
-4. **Built-in SSL**: Free SSL certificates for all services
-5. **Easy CI/CD**: Automatic deployments from GitHub
-6. **Zero Downtime Deploys**: Ensures your application remains available during updates
-
-#### Steps to Deploy on Render:
-
-1. **Backend (Web Service)**:
-   - Sign up at render.com
-   - Select "New Web Service" and connect your GitHub repo
-   - Select the backend directory as the root directory
-   - Set build command: `npm install`
-   - Set start command: `node server.js`
-   - Add all environment variables from your .env file
-   - Select appropriate instance type (Free tier is fine for testing)
-
-2. **Frontend (Static Site)**:
-   - Select "New Static Site" on Render dashboard
-   - Connect your GitHub repo
-   - Set the frontend directory as the root directory
-   - Set build command: `npm install && npm run build`
-   - Set publish directory: `build`
-   - Add environment variable: `REACT_APP_API_URL=https://your-backend-service.onrender.com/api`
-
-## Render Deployment Guide
-
-### Option 1: Deploy Using render.yaml (Recommended)
+#### Option 1: Deploy Using render.yaml (Recommended)
 
 1. **Push Your Code to GitHub**:
-   ```
+   ```bash
    git add .
    git commit -m "Prepare for deployment"
    git push
@@ -213,9 +248,8 @@ Render is an excellent choice for deploying this full-stack application because:
    - After deployment completes, visit your frontend URL (e.g., `https://secure-file-share.onrender.com`)
    - Test the application to ensure everything works properly
 
-### Option 2: Manual Deployment
-
-If you prefer to deploy manually without using the render.yaml file:
+<details>
+<summary><b>📋 Manual Deployment Option (Click to expand)</b></summary>
 
 #### Backend Deployment
 
@@ -262,8 +296,12 @@ If you prefer to deploy manually without using the render.yaml file:
    - Source: `/*`
    - Destination: `/index.html`
    - Action: "Rewrite"
+</details>
 
-### Troubleshooting Deployment
+### 🔍 Troubleshooting Deployment
+
+<details>
+<summary><b>Common Issues and Solutions (Click to expand)</b></summary>
 
 1. **CORS Issues**:
    - Double-check that the `FRONTEND_URL` in backend env variables exactly matches your frontend URL
@@ -280,66 +318,116 @@ If you prefer to deploy manually without using the render.yaml file:
 4. **Build Failures**:
    - If build fails, make sure all dependencies are properly listed in package.json
    - Check that there are no environment-specific code that might fail in production
+</details>
 
-### Post-Deployment Tasks
+### ✅ Post-Deployment Checklist
 
-1. **Test File Upload and Sharing**:
-   - Register a test account and upload a test file
-   - Share the file with another test account
-   - Verify encryption/decryption works correctly
-   - Test QR code functionality
+<details>
+<summary><b>Click to expand</b></summary>
 
-2. **Set Up a Custom Domain (Optional)**:
-   - In Render dashboard, go to your service
-   - Click on "Settings" > "Custom Domain"
-   - Follow the instructions to configure your domain
+- [ ] Verify all environment variables are correctly set
+- [ ] Test user registration and login
+- [ ] Test file upload functionality
+- [ ] Test file sharing with QR codes
+- [ ] Test file download with decryption
+- [ ] Check mobile responsiveness
+- [ ] Monitor application logs for any errors
+</details>
 
-3. **Set Up Monitoring (Optional)**:
-   - Consider adding services like Sentry or LogRocket for error tracking
-   - Set up uptime monitoring through services like UptimeRobot
+<p align="center">
+<img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
+</p>
 
-## Final Recommendation
+## 📖 Usage Guide
 
-For this specific application (Secure File Share), **Render** is likely the better choice because:
+<div align="center">
+<table>
+  <tr>
+    <th width="33%"><img src="https://img.icons8.com/color/96/000000/add-user-male--v1.png" width="50"/><br/>User Registration</th>
+    <th width="33%"><img src="https://img.icons8.com/color/96/000000/upload-to-cloud--v1.png" width="50"/><br/>Sharing Files</th>
+    <th width="33%"><img src="https://img.icons8.com/color/96/000000/download-from-cloud--v1.png" width="50"/><br/>Accessing Files</th>
+  </tr>
+  <tr>
+    <td>
+      <ol>
+        <li>Create an account with email and password</li>
+        <li>Log in to access the dashboard</li>
+      </ol>
+    </td>
+    <td>
+      <ol>
+        <li>Enter recipient's email address</li>
+        <li>Select or drag and drop the file</li>
+        <li>Click "Upload & Share"</li>
+        <li>Share the decryption key securely</li>
+      </ol>
+    </td>
+    <td>
+      <ol>
+        <li>Go to "Received Files" tab</li>
+        <li>Find the shared file</li>
+        <li>Enter the decryption key</li>
+        <li>Download and access the file</li>
+      </ol>
+    </td>
+  </tr>
+</table>
+</div>
 
-1. The app has both backend and frontend components that need to work together
-2. File uploads and encryption require robust backend support
-3. Having everything on one platform simplifies management
-4. Render's free tier is sufficient for demonstration purposes
-5. Scaling options are available when needed
-
-If you decide to use Vercel for the frontend and a separate service for the backend, ensure you properly configure CORS in the backend and update the API URL in the frontend.
-
-## Usage Guide
-
-### User Registration and Login
-
-1. Create an account with your email and a secure password
-2. Log in to access the dashboard
-
-### Sharing a File
-
-1. Enter recipient's email address
-2. Select or drag and drop the file to upload
-3. Click "Upload & Share"
-4. The recipient will receive access to the file
-5. Share the decryption key with the recipient via a secure channel
-
-### Accessing a Shared File
-
-1. Navigate to the "Received Files" tab
-2. Find the file shared with you
-3. Use the decryption key provided by the sender
-4. Download and decrypt the file
-
-### Using QR Codes
+### 📱 Using QR Codes
 
 1. Generate a QR code for any shared file
 2. Recipients can scan the QR code to access the file
 3. They'll need to enter the decryption key to download
 
-## License
+<p align="center">
+<img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
+</p>
+
+## 📸 Screenshots
+
+<div align="center">
+<table>
+  <tr>
+    <td width="33%"><img src="https://via.placeholder.com/400x225.png?text=Login+Screen" alt="Login Screen" width="100%"/></td>
+    <td width="33%"><img src="https://via.placeholder.com/400x225.png?text=Dashboard" alt="Dashboard" width="100%"/></td>
+    <td width="33%"><img src="https://via.placeholder.com/400x225.png?text=File+Sharing" alt="File Sharing" width="100%"/></td>
+  </tr>
+  <tr>
+    <td><p align="center"><b>Login Screen</b></p></td>
+    <td><p align="center"><b>Dashboard</b></p></td>
+    <td><p align="center"><b>File Sharing</b></p></td>
+  </tr>
+  <tr>
+    <td width="33%"><img src="https://via.placeholder.com/400x225.png?text=QR+Code+Modal" alt="QR Code Modal" width="100%"/></td>
+    <td width="33%"><img src="https://via.placeholder.com/400x225.png?text=File+Download" alt="File Download" width="100%"/></td>
+    <td width="33%"><img src="https://via.placeholder.com/400x225.png?text=Mobile+View" alt="Mobile View" width="100%"/></td>
+  </tr>
+  <tr>
+    <td><p align="center"><b>QR Code Modal</b></p></td>
+    <td><p align="center"><b>File Download</b></p></td>
+    <td><p align="center"><b>Mobile View</b></p></td>
+  </tr>
+</table>
+</div>
+
+<p align="center">
+<img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
+</p>
+
+## 📜 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-#   S e c u r e _ F i l e _ S h a r e  
+
+<p align="center">
+<a href="https://github.com/srivathsavsree/Secure_File_Share">
+<img src="https://img.shields.io/badge/GitHub-View%20Repository-blue?style=for-the-badge&logo=github" alt="GitHub Repository">
+</a>
+</p>
+
+<p align="center">
+<b>Made with ❤️ by srivathsavsree</b>
+</p>
+#   S e c u r e _ F i l e _ S h a r e 
+ 
  
